@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationPractice.Automation">
+      <class name="ui.LoginTest">
         <methods>
-          <include name="HambergerOperations"/>
-          <include name="RemoveFromCart"/>
-          <include name="BackHome"/>
-          <include name="LoginInApp"/>
+          <include name="sample"/>
         </methods>
-      </class> <!-- AutomationPractice.Automation -->
+      </class> <!-- ui.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

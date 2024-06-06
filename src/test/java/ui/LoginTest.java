@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginTest {
 	
 	@Test
-	public static void sample() {
+	public static void main(String []args) {
 		
 		
 		
