@@ -19,13 +19,12 @@ public class LoginTest {
 		try {
 			a.LoginInApp();
 			a.AddtoCart();
-			a.BackHome();
+			//a.BackHome();
 			a.CheckCartItems();
 			a.Checkout();
 			a.HambergerOperations();
 			a.TitleCheck();
 			a.Finish();
-			a.BackHome();
 			a.RemoveFromCart();
 			a.Sorting();
 			a.ProductDeatil();
