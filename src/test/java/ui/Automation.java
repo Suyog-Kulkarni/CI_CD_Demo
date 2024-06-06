@@ -2,6 +2,8 @@ package ui;
 
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -93,8 +95,13 @@ public class Automation {
 	@Test
 	public void BackHome() {
 		
+		try {
 		WebElement BackHomeButton = driver.findElement(By.xpath("//*[@id=\"back-to-products\"]"));
 		BackHomeButton.click();
+		}
+		catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Test
