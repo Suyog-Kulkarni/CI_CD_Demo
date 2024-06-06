@@ -17,23 +17,15 @@ public class LoginTest {
         driver.get("https://demoqa.com/login");
 
         // Assuming Automation class has a method to handle login
-        Automation a = new Automation();
+        //Automation a = new Automation();
         try {
-            a.LoginInApp();
-            a.AddtoCart();
-            //a.BackHome(); // Uncomment if needed
-            a.CheckCartItems();
-            a.Checkout();
-            //a.HambergerOperations(); // Uncomment if needed
-            a.TitleCheck();
-            a.Finish();
-            //a.RemoveFromCart(); // Uncomment if needed
-            a.Sorting();
-            a.ProductDeatil();
-            DragAndDrop.DandDfun();
-            MouseHover.MouseH();
-            SelectDropDown.SelectDD();
-            WebDriverMethods.WebDM();
+			/*
+			 * a.LoginInApp(); a.AddtoCart(); //a.BackHome(); // Uncomment if needed
+			 * a.CheckCartItems(); a.Checkout(); //a.HambergerOperations(); // Uncomment if
+			 * needed a.TitleCheck(); a.Finish(); //a.RemoveFromCart(); // Uncomment if
+			 * needed a.Sorting(); a.ProductDeatil(); DragAndDrop.DandDfun();
+			 * MouseHover.MouseH(); SelectDropDown.SelectDD(); WebDriverMethods.WebDM();
+			 */
 
             // Example of finding and interacting with elements
             WebElement password  = driver.findElement(By.id("password"));
@@ -42,8 +34,6 @@ public class LoginTest {
             driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
 
             // Add assertions or further actions as needed
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         } catch (ElementClickInterceptedException e) {
             e.printStackTrace();
         } finally {
