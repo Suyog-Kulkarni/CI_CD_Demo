@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebDriverMethods {
-public static void main(String[] args) throws InterruptedException {
+public static void WebDM() throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();

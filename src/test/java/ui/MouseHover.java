@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class MouseHover {
-public static void main(String[] args) throws InterruptedException {
+public static void MouseH() throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DragAndDrop {
-        public static void main(String[] args) throws InterruptedException {
+        public static void DandDfun() throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();

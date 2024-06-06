@@ -10,17 +10,32 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginTest {
 	
 	@Test
-	public void fun(String[] args) {
+	public static void main(String[] args) {
 		
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
-		driver.get("https://demoqa.com/login");
-		WebElement password  = driver.findElement(By.id("password"));
-		password.sendKeys("Suyog@123");
-		driver.findElement(with(By.tagName("input")).above(password)).sendKeys("Suyog");
-		//driver.findElement(with(By.tagName("button")).below(password)).click();
-		driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
-		
+		Automation a = new Automation();
+		try {
+			a.LoginInApp();
+			a.AddtoCart();
+			a.BackHome();
+			a.CheckCartItems();
+			a.Checkout();
+			a.HambergerOperations();
+			a.TitleCheck();
+			a.Finish();
+			a.BackHome();
+			a.RemoveFromCart();
+			a.Sorting();
+			a.ProductDeatil();
+			DragAndDrop.DandDfun();
+			MouseHover.MouseH();
+			SelectDropDown.SelectDD();
+			WebDriverMethods.WebDM();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
+		
+	}
 
 }
