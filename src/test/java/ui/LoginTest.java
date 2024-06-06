@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginTest {
 	
 	@Test
-	public void fun(String[] args) {
+	public static void main(String[] args) {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
