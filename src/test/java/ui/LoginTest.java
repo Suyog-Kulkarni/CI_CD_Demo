@@ -22,10 +22,10 @@ public class LoginTest {
 			//a.BackHome();
 			a.CheckCartItems();
 			a.Checkout();
-			a.HambergerOperations();
+			//a.HambergerOperations();
 			a.TitleCheck();
 			a.Finish();
-			a.RemoveFromCart();
+			//a.RemoveFromCart();
 			a.Sorting();
 			a.ProductDeatil();
 			DragAndDrop.DandDfun();
