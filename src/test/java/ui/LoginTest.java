@@ -16,16 +16,7 @@ public class LoginTest {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://demoqa.com/login");
 
-        // Assuming Automation class has a method to handle login
-        //Automation a = new Automation();
         try {
-			/*
-			 * a.LoginInApp(); a.AddtoCart(); //a.BackHome(); // Uncomment if needed
-			 * a.CheckCartItems(); a.Checkout(); //a.HambergerOperations(); // Uncomment if
-			 * needed a.TitleCheck(); a.Finish(); //a.RemoveFromCart(); // Uncomment if
-			 * needed a.Sorting(); a.ProductDeatil(); DragAndDrop.DandDfun();
-			 * MouseHover.MouseH(); SelectDropDown.SelectDD(); WebDriverMethods.WebDM();
-			 */
 
             // Example of finding and interacting with elements
             WebElement password  = driver.findElement(By.id("password"));

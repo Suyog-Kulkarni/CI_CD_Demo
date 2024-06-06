@@ -2,11 +2,15 @@ package ui;
 
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
+import java.time.Duration;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -105,8 +109,10 @@ public class Automation {
 	public void RemoveFromCart() throws InterruptedException {
 		
 		driver.navigate().to("https://www.saucedemo.com/inventory.html");
-		WebElement AddtoCart = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-		AddtoCart.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Wait up to 10 seconds
+		WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-sauce-labs-backpack")));
+		addToCart.click();
+
 	
 		WebElement cart = driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]"));
 		cart.click();
