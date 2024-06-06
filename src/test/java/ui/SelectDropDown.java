@@ -5,10 +5,12 @@ import static org.openqa.selenium.support.locators.RelativeLocator.with;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SelectDropDown {
+	@Test
 public static void SelectDD() {
 		
 		WebDriverManager.chromedriver().setup();

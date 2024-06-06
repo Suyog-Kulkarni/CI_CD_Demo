@@ -8,8 +8,6 @@ import static org.openqa.selenium.support.locators.RelativeLocator.with;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginTest {
-	
-	@Test
 	public static void main(String[] args) {
 		
 		Automation a = new Automation();
