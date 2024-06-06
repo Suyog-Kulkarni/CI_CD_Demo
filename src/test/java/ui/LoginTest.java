@@ -2,11 +2,14 @@ package ui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginTest {
-
+	
+	@Test
 	public void fun(String[] args) {
 		
 		WebDriverManager.chromedriver().setup();
@@ -18,8 +21,6 @@ public class LoginTest {
 		//driver.findElement(with(By.tagName("button")).below(password)).click();
 		driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
 		
-		
-
-	}
+		}
 
 }

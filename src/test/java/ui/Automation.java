@@ -1,4 +1,4 @@
-package AutomationPractice;
+package ui;
 
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
