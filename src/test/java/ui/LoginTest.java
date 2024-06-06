@@ -21,6 +21,29 @@ public class LoginTest {
 		//driver.findElement(with(By.tagName("button")).below(password)).click();
 		driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
 		
+		Automation a = new Automation();
+		try {
+			a.LoginInApp();
+			a.AddtoCart();
+			a.BackHome();
+			a.CheckCartItems();
+			a.Checkout();
+			a.HambergerOperations();
+			a.TitleCheck();
+			a.Finish();
+			a.BackHome();
+			a.RemoveFromCart();
+			a.Sorting();
+			a.ProductDeatil();
+			DragAndDrop.DandDfun();
+			MouseHover.MouseH();
+			SelectDropDown.SelectDD();
+			WebDriverMethods.WebDM();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		}
+	
 
 }
