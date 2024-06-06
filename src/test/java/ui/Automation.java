@@ -12,13 +12,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+
 public class Automation {
 	
 	public ChromeDriver driver;
+	public ExtentTest test;
 	@BeforeTest
 	public void LoginInApp() throws InterruptedException {
 		
@@ -152,4 +156,9 @@ public class Automation {
 		
 		driver.findElement(By.xpath("//*[@id=\"back-to-products\"]")).click();
 	}
+	
+	@AfterClass
+    public static void tearDown() {
+        extent.flush(); // Flush the report to write the results
+    }
 }
