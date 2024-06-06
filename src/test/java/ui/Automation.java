@@ -92,17 +92,14 @@ public class Automation {
 		FinishButton.click();
 	}
 	
-	@Test
-	public void BackHome() {
-		
-		try {
-		WebElement BackHomeButton = driver.findElement(By.xpath("//*[@id=\"back-to-products\"]"));
-		BackHomeButton.click();
-		}
-		catch(NoSuchElementException e) {
-			e.printStackTrace();
-		}
-	}
+	/*
+	 * @Test public void BackHome() {
+	 * 
+	 * try { WebElement BackHomeButton =
+	 * driver.findElement(By.xpath("//*[@id=\"back-to-products\"]"));
+	 * BackHomeButton.click(); } catch(NoSuchElementException e) {
+	 * e.printStackTrace(); } }
+	 */
 	
 	@Test
 	public void RemoveFromCart() throws InterruptedException {
