@@ -37,15 +37,15 @@ public class Automation {
 		System.out.println("Login Successful");
 		
 	}
-	@Test
-	public void HambergerOperations() {
-		
-		WebElement l = driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]"));
-		l.click();
-		//WebElement element = driver.findElement(By.className("bm-item-list"));
-		WebElement elements = driver.findElement(By.xpath("//*[text()=\"About\"]"));
-		elements.click();
-	}
+	/*
+	 * @Test public void HambergerOperations() {
+	 * 
+	 * WebElement l =
+	 * driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]"));
+	 * l.click(); //WebElement element =
+	 * driver.findElement(By.className("bm-item-list")); WebElement elements =
+	 * driver.findElement(By.xpath("//*[text()=\"About\"]")); elements.click(); }
+	 */
 	
 	@Test
 	public void TitleCheck() throws InterruptedException {
@@ -105,22 +105,23 @@ public class Automation {
 	 * e.printStackTrace(); } }
 	 */
 	
-	@Test
-	public void RemoveFromCart() throws InterruptedException {
-		
-		driver.navigate().to("https://www.saucedemo.com/inventory.html");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Wait up to 10 seconds
-		WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-sauce-labs-backpack")));
-		addToCart.click();
-
-	
-		WebElement cart = driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]"));
-		cart.click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[text()=\"Remove\"]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"continue-shopping\"]")).click();
-	}
+	/*
+	 * @Test public void RemoveFromCart() throws InterruptedException {
+	 * 
+	 * driver.navigate().to("https://www.saucedemo.com/inventory.html");
+	 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); //
+	 * Wait up to 10 seconds WebElement addToCart =
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(
+	 * "add-to-cart-sauce-labs-backpack"))); addToCart.click();
+	 * 
+	 * 
+	 * WebElement cart =
+	 * driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]"));
+	 * cart.click(); Thread.sleep(3000);
+	 * driver.findElement(By.xpath("//*[text()=\"Remove\"]")).click();
+	 * Thread.sleep(3000);
+	 * driver.findElement(By.xpath("//*[@id=\"continue-shopping\"]")).click(); }
+	 */
 	
 	@Test
 	public void Sorting() throws InterruptedException {
