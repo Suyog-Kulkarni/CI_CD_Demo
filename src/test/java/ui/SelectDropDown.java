@@ -16,11 +16,6 @@ public class SelectDropDown {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://demoqa.com/login");
-//		WebElement password  = driver.findElement(By.id("password"));
-//		password.sendKeys("Suyog@123");
-//		driver.findElement(with(By.tagName("input")).above(password)).sendKeys("Suyog");
-//		//driver.findElement(with(By.tagName("button")).below(password)).click();
-//		driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
 		
 		driver.manage().window().maximize();
 		
