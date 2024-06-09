@@ -5,7 +5,6 @@
 	<groupId>com.rcv</groupId>
 	<artifactId>SeleniumTraining</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<--!Blank space -->
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
